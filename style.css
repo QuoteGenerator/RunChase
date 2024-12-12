@@ -1,21 +1,27 @@
-body{
+body,html{
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    background: radial-gradient(black 80%,red 90%);
+    width: 100%;
+    height: 100%;
 }
 
 #runningBall{
-    width:30px;
-    height:30px;
-    background-color:blue;
+    width:100px;
+    height:100px;
+    background-image: url(pictures/runner.png);
     position: absolute;
     border-radius: 50%;
+    background-size: cover;
 }
 
 #chasingBall{
-    width:30px;
-    height:30px;
+    width:100px;
+    height:100px;
     background-color:red;
     position: absolute;
     border-radius: 50%;
+    background-image: url(pictures/chaser.jpg);
+    background-size: cover;
 }

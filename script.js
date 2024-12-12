@@ -18,8 +18,8 @@ function movingRunningBall(){
     position_runningBall.x += direction_runningBall.x*speed;
     position_runningBall.y += direction_runningBall.y*speed;
 
-    position_runningBall.x = Math.max(0,Math.min(window.innerWidth-30,position_runningBall.x));
-    position_runningBall.y = Math.max(0,Math.min(window.innerHeight-30,position_runningBall.y));
+    position_runningBall.x = Math.max(0,Math.min(window.innerWidth-100,position_runningBall.x));
+    position_runningBall.y = Math.max(0,Math.min(window.innerHeight-100,position_runningBall.y));
 
     running_ball.style.left = position_runningBall.x+"px";
     running_ball.style.top = position_runningBall.y+"px";
