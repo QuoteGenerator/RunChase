@@ -1,0 +1,21 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#runningBall{
+    width:30px;
+    height:30px;
+    background-color:blue;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#chasingBall{
+    width:30px;
+    height:30px;
+    background-color:red;
+    position: absolute;
+    border-radius: 50%;
+}
