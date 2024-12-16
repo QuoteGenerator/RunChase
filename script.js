@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let chasing_ball = document.getElementById("chasingBall");
 let running_ball = document.getElementById("runningBall");
 
-let position_chasingBall = {x:500, y:50};
-let position_runningBall = {x:100, y:250};
+let position_chasingBall = {x:Math.random() * (window.innerWidth-100), y:Math.random() * (window.innerHeight-100)};
+let position_runningBall = {x:Math.random() * (window.innerWidth-100), y:Math.random() * (window.innerHeight-100)};
 let direction_runningBall = {x:0,y:0}
 
 function changeDirectionRunningBall(){
@@ -46,15 +46,6 @@ function animate(){
     requestAnimationFrame(animate);
 }
 
-let chasingBall_startingPositionX = 100;
-let chasingBall_startingPositionY = 100;
-let runningBall_startingPositionX = 100;
-let runningBall_startingPositionY = 100;
-
-chasing_ball.style.left = chasingBall_startingPositionX + "px";
-chasing_ball.style.top = chasingBall_startingPositionY + "px";
-running_ball.style.left = runningBall_startingPositionX + "px";
-running_ball.style.top = runningBall_startingPositionY + "px";
 
 changeDirectionRunningBall();
 setInterval(changeDirectionRunningBall,2000);
